@@ -1,8 +1,21 @@
+<div align="center">
+
+<img src="docs/icon.png" width="96" alt="">
+
 # Glass
 
-A Haunt theme of frosted glass. Your wallpaper shows through the sidebar, title bar, terminal and palette, blurred. The window has rounded corners and coloured traffic lights. Selected rows and the palette's selection are raised pills.
+**A Haunt theme of frosted glass: your wallpaper shows through, blurred.**
 
-![Glass](screenshot.png)
+[![Haunt plugin](https://img.shields.io/badge/Haunt-plugin-D97757)](https://github.com/highskore/haunt-hackathon)
+![Plugin API 0.5](https://img.shields.io/badge/plugin%20API-0.5-111)
+![Theme](https://img.shields.io/badge/kind-theme-6b7280)
+[![License: MIT](https://img.shields.io/badge/license-MIT-6b7280)](LICENSE)
+
+<img src="docs/screenshot.png" width="720" alt="Haunt in Glass: a frosted sidebar with a raised selected row, and the palette open with a blue selection">
+
+</div>
+
+A Haunt theme of frosted glass. Your wallpaper shows through the sidebar, title bar, terminal and palette, blurred. The window has rounded corners and coloured traffic lights. Selected rows and the palette's selection are raised pills.
 
 The screenshot is drawn over a fixed backdrop, not a real desktop.
 
