@@ -1,0 +1,135 @@
+name = "Glass"
+appearance = "dark"
+
+[color]
+window.bg = "#1a1a2457"
+sidebar.bg = "#3e3e4761"
+hairline = "#ffffff1a"
+row.selected = "#ffffff26"
+text.primary = "#f4f4f8"
+text.meta = "#ffffff8c"
+text.sub = "#ffffff80"
+text.label = "#ffffff73"
+text.terminal = "#e6e6ea"
+bar.track = "#ffffff24"
+bar.fill = "#ffffff"
+icon.bg = "#ffffff24"
+icon.fg = "#ffffffcc"
+palette.bg = "#12264c80"
+palette.border = "#ffffff2e"
+palette.ink = "#f4f4f8"
+palette.mute = "#ffffff80"
+palette.rule = "#ffffff1a"
+palette.entry.rule = "#00000000"
+palette.sel = "#0a84ff"
+
+[size]
+sidebar.w = 262
+titlebar.h = 42
+titlebar.padx = 16
+palette.radius = 14
+label.font = 11
+label.pad = [12, 16, 4]
+row.pad = [7, 8]
+bar.h = 4
+palette.font = 12.5
+palette.small.font = 11.25
+palette.input.font = 18
+palette.input.pad = [12, 14]
+palette.input.gap = 8
+palette.cursor.h = 19.8
+palette.entry.pad = [6, 0]
+palette.list.pad = [6, 10]
+
+[font]
+base.line = 1.4
+
+[app]
+sidebar.padtop = 2
+sidebar.foot.pad = [10, 16, 14]
+caret.w = 1.5
+palette.caret.gap = 1
+palette.pill.ink = "#f4f4f8"
+
+[layout]
+palette_position = "bottom-right"
+palette_width = 340
+palette_rows = "single-line"
+title_format = "{tab} — {meta}"
+
+[effects]
+window.material = "glass"
+window.radius = 14
+window.ring = true
+titlebar.rule = false
+titlebar.lights = "color"
+sidebar.footer = true
+label.case = "sentence"
+label.weight = "semibold"
+row.inset = 8
+row.radius = 9
+needs.pill = true
+bar.radius = 2
+bar.glow = true
+bar.done = false
+palette.material = "glass"
+palette.font = "ui"
+palette.icons = true
+palette.selection = "pill"
+palette.foot = false
+palette.scrim = false
+palette.keys = "plain"
+palette.input.icon = true
+palette.input.weight = "light"
+palette.blur = "sheet"
+palette.tab.sub = "task"
+palette.modes = "plain"
+
+[ghostty]
+background = "#0e1016"
+foreground = "#e6e6ea"
+background-opacity = 0.55
+background-blur = 20
+cursor-color = "#ffffff"
+selection-background = "#0d3968"
+palette = ["0=#1d1f24", "1=#ff6b6b", "2=#5fd38d", "3=#ffd166", "4=#6aa9ff", "5=#c792ea", "6=#63d3e6", "7=#d0d0d6", "8=#5c6370", "9=#ff8787", "10=#7ee2a8", "11=#ffe08a", "12=#8fbfff", "13=#d9a8ff", "14=#8ae6f2", "15=#ffffff"]
+
+# The selected row, lifted: a soft shadow, a highlight along its top and a faint ring.
+[[layer]]
+id = "row-raised"
+slot = "row.selected"
+  [[layer.draw]]
+  kind = "shadow"
+  radius = 9
+  blur = 12
+  offset = [0, 4]
+  color = "#00000007"
+  [[layer.draw]]
+  kind = "rect"
+  left = 6
+  right = 6
+  y = "top"
+  h = 1
+  fill = "#ffffff33"
+  [[layer.draw]]
+  kind = "rect"
+  radius = 9
+  stroke = "#ffffff38"
+  width = 0.5
+
+# The row under the pointer, shaped like the selection.
+[[layer]]
+id = "row-hover"
+slot = "row.hover"
+  [[layer.draw]]
+  kind = "rect"
+  radius = 9
+  fill = "#ffffff0f"
+
+[[layer]]
+id = "palette-hover"
+slot = "palette.row.hover"
+  [[layer.draw]]
+  kind = "rect"
+  radius = 8
+  fill = "#ffffff0f"

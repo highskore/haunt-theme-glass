@@ -1,0 +1,14 @@
+[plugin]
+id = "dev.haunt.theme-glass"
+name = "Glass"
+description = "Frosted glass: your wallpaper glows through the sidebar, title bar and palette."
+version = "0.1.0"
+api = "0.5"
+license = "MIT"
+
+[capabilities]
+theme = true
+
+[contributes.theme]
+id = "glass"
+file = "theme.toml"
